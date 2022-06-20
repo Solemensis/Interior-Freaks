@@ -10,22 +10,32 @@ const btnsOpenModal = document.querySelectorAll(".show-modal");
 // open modal
 for (let i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[i].addEventListener("click", function () {
-    modal.classList.remove("hidden");
-    overlay.classList.remove("hidden");
+    modal.style.opacity = "1";
+    overlay.style.opacity = "1";
+    overlay.style.zIndex = "400";
+    overlay.style.transition = "0.5s";
+
     document.querySelector(".shown-modal").src = btnsOpenModal[i].src;
+    document.querySelector(".shown-modal").style.transition = "0.5s";
+    document.querySelector(".shown-modal").style.opacity = "1";
   });
 }
 
 // this has put in a function box for the sake of dry principle
 const closeModals = function () {
-  modal.classList.add("hidden");
-  overlay.classList.add("hidden");
-
+  modal.style.opacity = "0";
+  overlay.style.opacity = "0";
+  overlay.style.zIndex = "-1";
+  overlay.style.transition = "0.5s";
   formModal.style.opacity = "0";
   overlay2.style.opacity = "0";
   overlay2.style.zIndex = "-1";
+  overlay2.style.transition = "0.5s";
   formModal.style.zIndex = "-1";
   formModal.style.transition = "0.5s";
+
+  document.querySelector(".modal").style.transition = "0.5s";
+  document.querySelector(".modal").style.opacity = "0";
 
   document.querySelector(".main-screen").style.filter = "blur(0)";
   document.querySelector(".main-screen").style.transform = "scale(1)";
@@ -50,6 +60,6 @@ button1.addEventListener("click", function () {
 
   formModal.style.zIndex = "999999999999999";
   formModal.style.transition = "1s";
-  document.querySelector(".main-screen").style.filter = "blur(3px)";
-  document.querySelector(".main-screen").style.transform = "scale(1.010)";
+  document.querySelector(".main-screen").style.filter = "blur(4px)";
+  document.querySelector(".main-screen").style.transform = "scale(1.013)";
 });
