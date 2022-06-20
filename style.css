@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  user-select: none;
 }
 
 .banner {
@@ -305,7 +306,8 @@ h2 {
 
 .coursecol {
   flex-basis: 31%;
-  background: #fce4fd96;
+  background: #fc9eff96;
+  /* background: #fce4fd96; */
   font-size: 1.8rem;
   border-radius: 10px;
   margin-bottom: 16%;
@@ -400,20 +402,40 @@ h2 {
 }
 
 .click {
-  width: 8vw !important;
+  width: 9vw !important;
   position: absolute;
   right: 47%;
-  top: 4%;
-  transform: rotate(45deg);
+  top: 2%;
+
   filter: invert(25%) sepia(85%) saturate(5194%) hue-rotate(271deg)
     brightness(69%) contrast(119%);
+}
+.success {
+  position: absolute;
+  bottom: 19%;
+  font-size: 2rem;
+  color: rgb(246, 255, 0);
+  font-weight: 600;
+  opacity: 0;
+  transition: 1s;
+}
+.footer {
+  background-color: rgb(56, 56, 56);
+  color: white;
+  width: 100vw;
+  height: 5rem;
+  font-size: 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hidden {
   display: none !important;
 }
 .show-modal {
-  z-index: 1000;
+  z-index: 40045;
 }
 .left-arrow {
   position: absolute;

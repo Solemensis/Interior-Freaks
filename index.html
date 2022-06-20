@@ -18,6 +18,8 @@
       rel="stylesheet"
     />
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="sweetalert2.min.css" /> -->
   </head>
 
   <body>
@@ -46,7 +48,7 @@
         <p></p>
       </div>
       <div class="row">
-        <div class="coursecol">
+        <div data-aos="fade-right" class="coursecol">
           <h3>Who Are We?</h3>
 
           <p>
@@ -56,7 +58,7 @@
           <img src="ico/wfh_6.svg" class="lilphoto" />
         </div>
 
-        <div class="coursecol">
+        <div data-aos="fade-up" class="coursecol">
           <h3>What We Offer?</h3>
 
           <p class="ek">
@@ -66,7 +68,7 @@
           <img src="ico/wfh_2.svg" />
         </div>
 
-        <div class="coursecol">
+        <div data-aos="fade-left" class="coursecol">
           <h3>Where Do We Work?</h3>
 
           <p class="ek">
@@ -79,9 +81,11 @@
 
     <section class="testimonial-section-grid">
       <div>
-        <span class="subheading">Testimonials</span>
-        <h3 class="heading-tertiary">"Home sweet home!"</h3>
-        <div class="testi-grid-left">
+        <span data-aos="fade-right" class="subheading">Testimonials</span>
+        <h3 data-aos="fade-right" class="heading-tertiary">
+          "Home sweet home!"
+        </h3>
+        <div data-aos="fade-right" class="testi-grid-left">
           <div>
             <img class="testi-img" src="photos/testimonial2.jpeg" />
 
@@ -123,8 +127,8 @@
           </div>
         </div>
       </div>
-      <img class="click" src="photos/click.png" />
-      <div class="testi-grid-right" id="gallery">
+      <img data-aos="fade-right" class="click" src="photos/click.png" />
+      <div data-aos="fade-left" class="testi-grid-right" id="gallery">
         <img class="show-modal" src="gallery/1.jpg" />
         <img class="show-modal" src="gallery/2.jpg" /><img
           class="show-modal"
@@ -148,8 +152,8 @@
         <button class="close-modal">&times;</button>
         <h2>Let us call you!</h2>
         <form class="form">
-          <label for="fname">Full name:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
+          <label for="fname">First name:</label><br />
+          <input type="text" class="formClass" id="fname" name="fname" /><br />
           <label for="lname">Side you live:</label><br />
           <select class="dropdown">
             <option value="West">EU West</option>
@@ -157,10 +161,11 @@
           </select>
           <br />
           <label for="fname">Contact number:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
+          <input class="formClass" type="text" id="fname" name="fname" /><br />
           <label for="fname">Mail:</label><br />
-          <input type="text" id="fname" name="fname" /><br />
+          <input class="formClass" type="text" id="fname" name="fname" /><br />
         </form>
+        <div class="success"><p>Success!</p></div>
         <button class="formSendButton">Send</button>
       </div>
       <div class="modal">
@@ -171,11 +176,19 @@
     </section>
     <!-- <section>services section'ı kaldı</section> -->
 
-    <!-- <section class="container footer">
+    <section class="footer">
       <p>
-        © Lorem ipsum dolor sit .
+        Built by Solemensis to be an example project for his portfolio.
+        Copyright © by Solemensis.
       </p>
-    </section> -->
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
+
   <script src="script.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+  <!-- <script src="sweetalert2.all.min.js"></script> -->
 </html>

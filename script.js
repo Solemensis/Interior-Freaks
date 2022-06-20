@@ -12,12 +12,13 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
   btnsOpenModal[i].addEventListener("click", function () {
     modal.style.opacity = "1";
     overlay.style.opacity = "1";
-    overlay.style.zIndex = "400";
+    overlay.style.zIndex = "40044";
     overlay.style.transition = "0.5s";
 
     document.querySelector(".shown-modal").src = btnsOpenModal[i].src;
     document.querySelector(".shown-modal").style.transition = "0.5s";
     document.querySelector(".shown-modal").style.opacity = "1";
+    document.querySelector(".modal").style.zIndex = "40045";
   });
 }
 
@@ -25,17 +26,18 @@ for (let i = 0; i < btnsOpenModal.length; i++) {
 const closeModals = function () {
   modal.style.opacity = "0";
   overlay.style.opacity = "0";
-  overlay.style.zIndex = "-1";
+  overlay.style.zIndex = "-1000";
   overlay.style.transition = "0.5s";
   formModal.style.opacity = "0";
   overlay2.style.opacity = "0";
-  overlay2.style.zIndex = "-1";
+  overlay2.style.zIndex = "-1000";
   overlay2.style.transition = "0.5s";
   formModal.style.zIndex = "-1";
   formModal.style.transition = "0.5s";
 
   document.querySelector(".modal").style.transition = "0.5s";
   document.querySelector(".modal").style.opacity = "0";
+  document.querySelector(".modal").style.zIndex = "-1000";
 
   document.querySelector(".main-screen").style.filter = "blur(0)";
   document.querySelector(".main-screen").style.transform = "scale(1)";
@@ -55,11 +57,25 @@ let formModal = document.querySelector(".form-modal");
 
 button1.addEventListener("click", function () {
   formModal.style.opacity = "1";
-  overlay2.style.opacity = "1";
-  overlay2.style.zIndex = "500";
+  overlay2.style.opacity = "0.8";
+  overlay2.style.zIndex = "1005111";
 
-  formModal.style.zIndex = "999999999999999";
+  formModal.style.zIndex = "10061006";
   formModal.style.transition = "1s";
   document.querySelector(".main-screen").style.filter = "blur(4px)";
   document.querySelector(".main-screen").style.transform = "scale(1.013)";
 });
+
+document
+  .querySelector(".formSendButton")
+  .addEventListener("click", function () {
+    document
+      .querySelectorAll(".formClass")
+      .forEach((inputField) => (inputField.value = null));
+    document.querySelector(".success").style.opacity = "1";
+
+    setTimeout(
+      () => (document.querySelector(".success").style.opacity = "0"),
+      4000
+    );
+  });
