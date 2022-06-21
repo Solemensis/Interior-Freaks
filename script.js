@@ -53,6 +53,8 @@ modal.addEventListener("click", closeModals);
 // *****************
 
 let button1 = document.querySelector(".button1");
+let button3 = document.querySelector(".button3");
+let button4 = document.querySelector(".button4");
 let formModal = document.querySelector(".form-modal");
 
 button1.addEventListener("click", function () {
@@ -60,6 +62,28 @@ button1.addEventListener("click", function () {
   overlay2.style.opacity = "0.8";
   overlay2.style.zIndex = "1005111";
 
+  formModal.style.zIndex = "10061006";
+  formModal.style.transition = "1s";
+  document.querySelector(".main-screen").style.filter = "blur(4px)";
+  document.querySelector(".main-screen").style.transform = "scale(1.013)";
+});
+
+button3.addEventListener("click", function () {
+  formModal.style.opacity = "1";
+  overlay2.style.opacity = "0.8";
+  overlay2.style.zIndex = "1005111";
+  document.querySelector(".dropdown2").value = "one";
+  formModal.style.zIndex = "10061006";
+  formModal.style.transition = "1s";
+  document.querySelector(".main-screen").style.filter = "blur(4px)";
+  document.querySelector(".main-screen").style.transform = "scale(1.013)";
+});
+
+button4.addEventListener("click", function () {
+  formModal.style.opacity = "1";
+  overlay2.style.opacity = "0.8";
+  overlay2.style.zIndex = "1005111";
+  document.querySelector(".dropdown2").value = "all";
   formModal.style.zIndex = "10061006";
   formModal.style.transition = "1s";
   document.querySelector(".main-screen").style.filter = "blur(4px)";
@@ -79,3 +103,8 @@ document
       4000
     );
   });
+
+document.querySelector(".logo").addEventListener("click", function () {
+  document.body.scrollTop = 1500; // For Safari
+  document.documentElement.scrollTop = 1500; // For Chrome, Firefox, IE and Opera
+});

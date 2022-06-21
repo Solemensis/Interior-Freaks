@@ -26,26 +26,31 @@
     <section class="main-screen">
       <div class="banner">
         <nav class="navbar container">
-          <img src="photos/logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Gallery</a></li>
+          <img src="photos/logo.png" class="logo2" />
 
-            <li><a href="#">Services</a></li>
+          <ul>
+            <li><a href="#exx2">Gallery</a></li>
+
+            <li><a href="#exx3">Services</a></li>
           </ul>
         </nav>
         <div class="content container">
           <h1>We'll Design Your Place<span class="surprise">!</span></h1>
           <p>We think that home design effects human mood in a major way.</p>
+          <div class="buttonflexes">
+            <button class="button1" type="button">Let's Design!</button>
 
-          <button class="button1" type="button">Let's Design!</button
-          ><button class="button2" type="button">Learn More</button>
+            <a href="#exx"
+              ><button class="button2" type="button">Learn More</button></a
+            >
+          </div>
         </div>
       </div>
     </section>
     <section class="sec2 container">
+      <p id="exx" class="exx">example</p>
       <div class="divdiv">
-        <h2>Get To Know Us</h2>
-        <p></p>
+        <h2 id="gettoknowus">Get To Know Us</h2>
       </div>
       <div class="row">
         <div data-aos="fade-right" class="coursecol">
@@ -79,12 +84,13 @@
       </div>
     </section>
 
-    <section class="testimonial-section-grid">
+    <section id="exx2" class="testimonial-section-grid">
       <div>
         <span data-aos="fade-right" class="subheading">Testimonials</span>
         <h3 data-aos="fade-right" class="heading-tertiary">
           "Home sweet home!"
         </h3>
+
         <div data-aos="fade-right" class="testi-grid-left">
           <div>
             <img class="testi-img" src="photos/testimonial2.jpeg" />
@@ -154,16 +160,21 @@
         <form class="form">
           <label for="fname">First name:</label><br />
           <input type="text" class="formClass" id="fname" name="fname" /><br />
+
+          <label for="fname">Contact number:</label><br />
+          <input class="formClass" type="text" id="fname" name="fname" /><br />
           <label for="lname">Side you live:</label><br />
           <select class="dropdown">
             <option value="West">EU West</option>
             <option value="East">EU East</option>
           </select>
           <br />
-          <label for="fname">Contact number:</label><br />
-          <input class="formClass" type="text" id="fname" name="fname" /><br />
-          <label for="fname">Mail:</label><br />
-          <input class="formClass" type="text" id="fname" name="fname" /><br />
+          <label for="lname">Service:</label><br />
+          <select class="dropdown2">
+            <option value="one">Specific Work</option>
+            <option value="all">Top To Bottom</option>
+          </select>
+          <br />
         </form>
         <div class="success"><p>Success!</p></div>
         <button class="formSendButton">Send</button>
@@ -171,16 +182,70 @@
       <div class="modal">
         <button class="close-modal">&times;</button>
 
-        <img width="500px" class="shown-modal" />
+        <img class="shown-modal" />
       </div>
     </section>
-    <!-- <section>services section'ı kaldı</section> -->
+    <p id="exx3" class="exx3">example</p>
+    <section class="servicessection sec2">
+      <h2 class="lastheading">You Like What You See So Far?</h2>
+      <div class="services">
+        <div data-aos="fade-right" class="coursecol2">
+          <h3>- Specific Work -</h3>
 
-    <section class="footer">
-      <p>
-        Built by Solemensis to be an example project for his portfolio.
-        Copyright © by Solemensis.
-      </p>
+          <ul>
+            <li class="ul1">Lorem ipsum dolor sit amet consectetur.</li>
+            <li class="ul1">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis,
+              explicabo quos.
+            </li>
+            <li class="ul1">Lorem ipsum dolor sit amet.</li>
+          </ul>
+          <div class="pricing">
+            <h4>$7999</h4>
+            <button class="button3">Let's Design!</button>
+          </div>
+        </div>
+        <div data-aos="fade-left" class="coursecol2">
+          <h3>- Top To Bottom -</h3>
+
+          <ul>
+            <li class="ul2">Lorem ipsum dolor sit.</li>
+            <li class="ul2">Lorem ipsum dolor sit amet consectetur.</li>
+            <li class="ul2">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo nam
+              rem sequi ea ratione!
+            </li>
+            <li class="ul2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </li>
+            <li class="ul2">Lorem, ipsum dolor.</li>
+          </ul>
+          <div class="pricing">
+            <h4>$23999</h4>
+            <button class="button4">Let's Design!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footersection">
+      <div class="footer">
+        <div class="logoo">
+          <a href="#"><img class="logooimg" src="photos/logo.png" alt="" /></a>
+        </div>
+        <div class="socials">
+          <a target="_blank" href="https://www.instagram.com/ulassacli/"
+            ><img class="insta" src="ico/instagram.svg" alt=""
+          /></a>
+          <a target="_blank" href="https://github.com/Solemensis">
+            <img class="git" src="ico/github.svg"
+          /></a>
+        </div>
+        <p>
+          Built by Solemensis to be an example project for his portfolio.
+          Copyright © 2022 by Solemensis.
+        </p>
+      </div>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

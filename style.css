@@ -8,8 +8,20 @@ html {
   font-size: 62.5%;
   overflow-x: hidden;
   user-select: none;
+  scroll-behavior: smooth;
+}
+.exx {
+  margin-bottom: 9%;
+  opacity: 0;
+}
+.exx3 {
+  margin-bottom: 3%;
+  opacity: 0;
 }
 
+.exx {
+  margin-bottom: 7%;
+}
 .banner {
   max-width: 100%;
   height: 100vh;
@@ -18,7 +30,7 @@ html {
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 12%;
+  margin-bottom: 3%;
 }
 .navbar {
   display: flex;
@@ -28,10 +40,9 @@ html {
   z-index: 100;
 }
 
-.logo {
+.logo2 {
   width: 13rem;
   z-index: 100;
-  cursor: pointer;
 }
 
 .navbar ul li {
@@ -113,12 +124,14 @@ html {
   border: rgb(167, 70, 200) 2px solid;
   cursor: pointer;
 }
-.dropdown {
+.dropdown,
+.dropdown2 {
   width: 15.9rem;
   height: 1.9rem;
   background-color: white;
   border: white;
 }
+
 label {
   color: white;
 }
@@ -264,7 +277,10 @@ h1 {
 .sec2 {
   width: 80%;
   margin: auto;
-  text-align: center;
+}
+
+.lastheading {
+  margin-bottom: 6rem;
 }
 
 .close-modal {
@@ -282,6 +298,7 @@ h2 {
   font-size: 3.6rem;
   font-weight: 600;
   cursor: default;
+  text-align: center;
 }
 .divdiv p {
   font-size: 1.6rem;
@@ -312,9 +329,114 @@ h2 {
   border-radius: 10px;
   margin-bottom: 16%;
   padding: 2.5rem 2.5rem 2rem 2.5rem;
-
-  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.137);
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+.services h3 {
+  margin-bottom: 4rem !important;
+}
+
+.coursecol2 {
+  flex-basis: 31%;
+  background: #10c0393e;
+  /* background: #fce4fd96; */
+  font-size: 1.8rem;
+  border-radius: 10px;
+  margin-bottom: 16%;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.pricing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.services h3 {
+  font-size: 3rem !important;
+}
+.button3 {
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  border: 2px solid white;
+  color: white;
+  background: rgba(85, 82, 82, 0.596);
+
+  transition: 0.2s;
+}
+
+.button3:hover {
+  border: 2px solid rgb(184, 6, 187);
+  background: rgb(184, 6, 187);
+}
+
+.button4 {
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  border: 2px solid white;
+  color: white;
+  background: rgba(85, 82, 82, 0.596);
+
+  transition: 0.2s;
+}
+
+.button4:hover {
+  border: 2px solid rgb(184, 6, 187);
+  background: rgb(184, 6, 187);
+}
+.coursecol2:last-child {
+  flex-basis: 31%;
+  background: #000000d5;
+  /* background: #fce4fd96; */
+  font-size: 1.8rem;
+  border-radius: 10px;
+  margin-bottom: 16%;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  color: white !important;
+}
+.coursecol2:last-child li {
+  color: white !important;
+}
+h4 {
+  font-size: 4rem;
+}
+
+.services li {
+  margin-bottom: 2rem;
+  color: #000000;
+  text-decoration-color: white;
+  font-weight: 300;
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  cursor: default;
+  list-style: none;
+  margin-right: 1rem;
+}
+.services li::before {
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  margin-right: 1rem;
+}
+
+.ul1::before {
+  content: url(ico/arrow2.svg);
+
+  width: 1.2rem; /* Also needed for space (tweak if needed) */
+}
+.ul2::before {
+  content: url(ico/arrow.svg);
+  width: 1.2rem; /* Also needed for space (tweak if needed) */
+}
+
 .ek {
   margin-bottom: 2.5rem;
 }
@@ -352,7 +474,7 @@ h2 {
 
   padding: 10rem 2rem 10rem 10rem;
   position: relative;
-  margin-bottom: 30rem;
+  margin-bottom: 20rem;
 }
 
 .testi-grid-left {
@@ -362,6 +484,16 @@ h2 {
   column-gap: 4.8rem;
 }
 
+.logoo {
+  position: absolute;
+  left: 5%;
+}
+.logoo img {
+  width: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .testi-grid-right {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -423,14 +555,39 @@ h2 {
   background-color: rgb(56, 56, 56);
   color: white;
   width: 100vw;
-  height: 5rem;
+  height: 6rem;
   font-size: 1.5rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
 }
 
+.socials {
+  position: absolute;
+  right: 5%;
+  width: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.insta {
+  width: 3.5rem;
+}
+.git {
+  width: 2.5rem;
+}
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.services img {
+  width: 30rem;
+}
 .hidden {
   display: none !important;
 }
@@ -464,4 +621,31 @@ h2 {
   box-shadow: 0 0 25px 20px rgba(0, 0, 0, 0.205);
   transition: 0.5s;
   opacity: 0;
+  width: 55rem;
+}
+
+/* 
+mobile adaptation: */
+
+@media (orientation: portrait) {
+  html {
+    font-size: 27%;
+  }
+  button {
+    width: 16rem !important;
+    height: 4.5rem;
+    font-size: 1.8rem;
+  }
+  .buttonflexes {
+    display: flex;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+  .banner p {
+    margin-bottom: 2rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
 }
