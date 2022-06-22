@@ -103,8 +103,3 @@ document
       4000
     );
   });
-
-document.querySelector(".logo").addEventListener("click", function () {
-  document.body.scrollTop = 1500; // For Safari
-  document.documentElement.scrollTop = 1500; // For Chrome, Firefox, IE and Opera
-});
