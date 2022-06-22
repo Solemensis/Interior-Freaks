@@ -70,7 +70,7 @@ button1.addEventListener("click", function () {
 
 button3.addEventListener("click", function () {
   formModal.style.opacity = "1";
-  overlay2.style.opacity = "0.8";
+  overlay2.style.opacity = "1";
   overlay2.style.zIndex = "1005111";
   document.querySelector(".dropdown2").value = "one";
   formModal.style.zIndex = "10061006";
@@ -81,7 +81,7 @@ button3.addEventListener("click", function () {
 
 button4.addEventListener("click", function () {
   formModal.style.opacity = "1";
-  overlay2.style.opacity = "0.8";
+  overlay2.style.opacity = "1";
   overlay2.style.zIndex = "1005111";
   document.querySelector(".dropdown2").value = "all";
   formModal.style.zIndex = "10061006";
