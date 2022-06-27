@@ -668,6 +668,53 @@ mobile adaptation: */
   html {
     font-size: 27%;
   }
+  .services {
+    justify-content: space-around;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .coursecol {
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    margin-bottom: 3rem;
+  }
+  .coursecol img {
+    display: none;
+  }
+  .knowus::before {
+    content: url(ico/pin1.svg);
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    margin-right: 2.5rem;
+    width: 0.6rem; /* Also needed for space (tweak if needed) */
+  }
+
+  .coursecol h3 {
+    margin-right: 2.5rem;
+  }
+
+  .coursecol2 {
+    margin-left: 0.5rem;
+  }
+  .cc2 {
+    margin-right: 2.5rem;
+  }
+  h2 {
+    margin-bottom: 5rem;
+  }
+  .navbar {
+    padding-top: 4rem;
+    justify-content: space-around;
+  }
+  .navbar ul li a {
+    font-size: 2.5rem;
+  }
+  .lilphoto2 {
+    padding-top: 5rem;
+  }
+  .lilphoto {
+    padding-top: 3rem;
+  }
   button {
     width: 16rem !important;
     height: 4.5rem;
@@ -677,13 +724,70 @@ mobile adaptation: */
     display: flex;
   }
   h1 {
-    font-size: 6rem;
+    font-size: 6.2rem;
+  }
+  .content p {
+    font-size: 1.8rem;
+  }
+  .modal {
+    top: 30%;
+    left: 50%;
+  }
+
+  .close-modal {
+    right: -3.5rem;
+    font-size: 8rem;
+  }
+  .testi-grid-left-main {
+    width: 50rem;
+    margin-bottom: 10rem;
+  }
+
+  .testi-grid-right {
+    justify-items: start !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-right: 12rem;
+  }
+  .testi-grid-right img {
+    width: 12rem;
+  }
+  .show-modal {
+    width: 10rem;
+  }
+  .shown-modal {
+    width: 60rem;
+  }
+  .testimonial-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .click {
+    display: none;
+  }
+  #exx {
+    margin-bottom: 40%;
+  }
+  .bitki {
+    top: -7%;
+  }
+  .footer p {
+    font-size: 1rem;
+    margin-right: 3rem;
+  }
+  h2 {
+    font-size: 4.2rem;
   }
   .banner p {
     margin-bottom: 2rem;
   }
   h4 {
     font-size: 3rem;
+  }
+  .footer {
+    margin-top: 15rem;
+  }
+  .sec2 {
+    margin-bottom: 10rem;
   }
 }
 
@@ -702,7 +806,7 @@ mobile adaptation: */
     right: -2.5rem;
   }
 }
-@media (max-width: 1280px) {
+@media (min-width: 1280px) {
   html {
     font-size: 52%;
   }
@@ -717,7 +821,7 @@ mobile adaptation: */
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   html {
     font-size: 50%;
   }
