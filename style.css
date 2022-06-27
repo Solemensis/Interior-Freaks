@@ -666,7 +666,7 @@ mobile adaptation: */
 
 @media (orientation: portrait) {
   html {
-    font-size: 27%;
+    font-size: 33%;
   }
   .services {
     justify-content: space-around;
@@ -694,11 +694,25 @@ mobile adaptation: */
   }
 
   .coursecol2 {
+    width: 28rem;
     margin-left: 0.5rem;
   }
   .cc2 {
-    margin-right: 2.5rem;
+    margin-right: 1rem;
+    width: 26rem;
   }
+  .pricing h4 {
+    font-size: 3rem;
+  }
+  .pricing button {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+
+  .coursecol2 h3 {
+    font-size: 2.7rem !important;
+  }
+
   h2 {
     margin-bottom: 5rem;
   }
@@ -724,7 +738,7 @@ mobile adaptation: */
     display: flex;
   }
   h1 {
-    font-size: 6.2rem;
+    font-size: 6.1rem;
   }
   .content p {
     font-size: 1.8rem;
@@ -746,7 +760,9 @@ mobile adaptation: */
   .testi-grid-right {
     justify-items: start !important;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-right: 12rem;
+    padding-right: 12rem;
+    gap: 1.5rem;
+    margin-left: -1.5rem;
   }
   .testi-grid-right img {
     width: 12rem;
@@ -759,6 +775,7 @@ mobile adaptation: */
   }
   .testimonial-section-grid {
     grid-template-columns: 1fr;
+    padding: 5rem;
   }
 
   .click {
@@ -768,10 +785,11 @@ mobile adaptation: */
     margin-bottom: 40%;
   }
   .bitki {
-    top: -7%;
+    top: -9%;
+    left: -5%;
   }
   .footer p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-right: 3rem;
   }
   h2 {
