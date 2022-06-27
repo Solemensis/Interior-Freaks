@@ -782,7 +782,6 @@ mobile adaptation: */
   }
   .testimonial-section-grid {
     grid-template-columns: 1fr;
-    padding: 3rem;
   }
 
   .click {
@@ -796,7 +795,7 @@ mobile adaptation: */
     left: -5%;
   }
   .footer p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-right: 3rem;
   }
   h2 {
@@ -811,6 +810,7 @@ mobile adaptation: */
   .footer {
     margin-top: 15rem;
   }
+
   .sec2 {
     margin-bottom: 10rem;
   }
