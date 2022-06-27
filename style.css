@@ -782,6 +782,8 @@ mobile adaptation: */
   }
   .testimonial-section-grid {
     grid-template-columns: 1fr;
+    margin: 0 auto !important;
+    width: 110% !important;
   }
 
   .click {
