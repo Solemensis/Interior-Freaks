@@ -767,9 +767,31 @@ mobile adaptation: */
   .testi-grid-right {
     justify-items: start !important;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-right: 12rem;
+    padding-right: 15rem !important;
     gap: 1.5rem;
     /* margin-left: -1.5rem; */
+  }
+  .form-modal {
+    width: 60%;
+  }
+  .form-modal button:first-child {
+    font-size: 6rem;
+  }
+  .form-modal button {
+    padding: 0.5rem 3rem;
+    font-size: 2.5rem;
+  }
+  form label {
+    font-size: 2.5rem;
+  }
+  .form-modal h2 {
+    font-size: 4rem;
+    padding-top: 3rem;
+  }
+  .dropdown,
+  .dropdown2 {
+    height: 3rem !important;
+    width: 25rem;
   }
   .testi-grid-right img {
     width: 12rem;
