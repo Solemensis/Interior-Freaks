@@ -6,13 +6,14 @@
 }
 html {
   font-size: 62.5% !important;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   user-select: none;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #f8f9fa;
+  overflow-x: hidden !important;
 }
 .exx {
   margin-bottom: 9%;
@@ -475,7 +476,7 @@ h4 {
 }
 .container {
   margin: 0 auto;
-  max-width: 120rem;
+  max-width: 100vw;
 }
 
 .testi-grid-right img {
