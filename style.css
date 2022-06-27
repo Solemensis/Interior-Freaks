@@ -476,7 +476,7 @@ h4 {
 }
 .container {
   margin: 0 auto;
-  max-width: 100vw;
+  max-width: 80%;
 }
 
 .testi-grid-right img {
@@ -801,7 +801,7 @@ mobile adaptation: */
     width: 10rem;
   }
   .shown-modal {
-    width: 60rem;
+    width: 50rem;
   }
   .testimonial-section-grid {
     grid-template-columns: 1fr;
@@ -817,7 +817,7 @@ mobile adaptation: */
   }
   .bitki {
     top: -9%;
-    left: -5%;
+    left: 2%;
   }
   .footer p {
     font-size: 1rem;
