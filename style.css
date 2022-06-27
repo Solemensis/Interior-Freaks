@@ -842,7 +842,7 @@ mobile adaptation: */
 
 @media (min-width: 1920px) {
   html {
-    font-size: 77% !important;
+    font-size: 81% !important;
   }
   button {
     width: 12rem !important;
@@ -855,7 +855,7 @@ mobile adaptation: */
     right: -2.5rem;
   }
 }
-@media (max-width: 1280px) {
+@media (min-width: 1280px) and (max-width: 1450px) {
   html {
     font-size: 54% !important;
   }
@@ -869,8 +869,22 @@ mobile adaptation: */
     right: -3.5rem;
   }
 }
+@media (min-width: 1450px) and (max-width: 1900px) {
+  html {
+    font-size: 67% !important;
+  }
+  button {
+    width: 14rem !important;
+    height: 4.1rem;
+    font-size: 1.4rem;
+  }
+  .close-modal {
+    top: 0.2rem;
+    right: -3.5rem;
+  }
+}
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1270px) {
   html {
     font-size: 58% !important;
   }
