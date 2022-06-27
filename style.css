@@ -768,9 +768,12 @@ mobile adaptation: */
   .testi-grid-right {
     justify-items: start !important;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-right: 15rem !important;
+
     gap: 1.5rem;
     /* margin-left: -1.5rem; */
+    /* padding-right: 15rem !important; */
+    margin: 0 auto;
+    max-width: 80vw;
   }
   .form-modal {
     width: 60%;
