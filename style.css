@@ -761,7 +761,7 @@ mobile adaptation: */
   }
   .testi-grid-left-main {
     width: 50rem;
-    margin-bottom: 10rem;
+    margin-bottom: 10rem !important;
   }
 
   .testi-grid-right {
@@ -782,8 +782,8 @@ mobile adaptation: */
   }
   .testimonial-section-grid {
     grid-template-columns: 1fr;
-    margin: 0 auto !important;
-    width: 110% !important;
+
+    width: 105% !important;
   }
 
   .click {
