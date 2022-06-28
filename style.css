@@ -713,12 +713,12 @@ mobile adaptation: */
     font-size: 3rem;
   }
   .pricing button {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-left: 1rem;
   }
 
   .coursecol2 h3 {
-    font-size: 2.7rem !important;
+    font-size: 2.4rem !important;
   }
 
   h2 {
@@ -726,7 +726,7 @@ mobile adaptation: */
   }
   .navbar {
     padding-top: 4rem;
-    justify-content: space-between;
+    justify-content: space-between !important;
   }
   .navbar ul li a {
     font-size: 2.5rem;
@@ -771,6 +771,7 @@ mobile adaptation: */
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 10rem;
     gap: 1rem;
+
     /* margin-left: -1.5rem; */
   }
   .testimonial-section-grid {
